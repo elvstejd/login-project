@@ -1,0 +1,26 @@
+.login-container {
+  height: 100vh;
+  overflow: auto;
+  padding: 0 1rem;
+}
+.margin-center {
+  margin: 0 auto;
+}
+.login-form-container {
+  max-width: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 8vh;
+}
+.signup-form-container {
+  max-width: 40rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4vh;
+}
+.dashboard-container {
+  height: 100vh;
+  padding: 5%;
+}
