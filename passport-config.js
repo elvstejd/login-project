@@ -8,14 +8,14 @@ function initialize(passport) {
         const [[user],] = await User.findUserByUsername(username);
 
         if (!user) {
-            return done(null, false, { message: 'No user with that email' });
+            return done(null, false, { message: 'Usuario inexistente. ' });
         }
 
         try {
             if (await bcrypt.compare(password, user.password)) {
                 return done(null, user);
             } else {
-                return done(null, false, { message: 'Password incorrect' })
+                return done(null, false, { message: 'Contraseña incorrecta.' })
             }
         } catch (err) {
             return done(err);
