@@ -7,7 +7,7 @@ const Role = require('..//models/role');
 /* GET signup page */
 router.get('/', async (req, res) => {
     const [rows,] = await Role.findAll();
-
+    res.render('signup', { roles: rows });
 });
 
 /* POST signup page */
