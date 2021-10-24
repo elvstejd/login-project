@@ -30,15 +30,6 @@ Run
 
 ```
 
-## Tech Stack
-
-**Client:** HTML/CSS, Pico.css, Handlebars
-
-**Server:** Node, Express, Passport.js
-
-**Database**: MySQL
-
-  
 ## Environment Variables
 
 To run this project, you will need to add the following environment variables to your .env file
@@ -57,3 +48,15 @@ To run this project, you will need to add the following environment variables to
 ## E-R Model
 
 ![imagen](https://user-images.githubusercontent.com/47759122/138576631-77d7645a-0273-4bf3-8298-3c4cf405032e.png)
+
+
+## Tech Stack
+
+**Client:** HTML/CSS, Pico.css, Handlebars
+
+**Server:** Node, Express, Passport.js
+
+**Database**: MySQL
+
+
+
