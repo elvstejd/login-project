@@ -15,7 +15,7 @@ router.post('/', async (req, res) => {
     try {
         const hashedPassword = await bcrypt.hash(req.body.password, 10);
         const newUser = new User(Date.now().toString(), req.body.name, req.body.username, hashedPassword);
-        const [rows,] = await newUser.save();
+        await newUser.save();
         await newUser.assignRole(parseInt(req.body.role));
         return res.redirect('/login');
     } catch (err) {
